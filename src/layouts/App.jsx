@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css'
 
+import Main from './Main/Main.jsx';
+
 const App = () => {
   
 
   return (
     <>
-        Espacio para el to-do list
+      <Main/>
     </>
   )
 }
 
-export default App
+export default App;
