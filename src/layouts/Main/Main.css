@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Outfit' ;
+    src: url('../../resources/fonts/Outfit-VariableFont_wght.ttf');
+}
+/*Fuente secundaria*/
+@font-face {
+    font-family: 'Manrope' ;
+    src: url('../../resources/fonts/Manrope-VariableFont_wght.ttf');
+}
+
+:root{
+    background-color: rgb(121, 166, 245);
+    user-select: none;
+}
+
+.container__elements{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container__data{
+    border: 5px solid #ffff;
+    box-shadow: 0 0 40px 4px #fff;
+    background: linear-gradient(#5296f0, #000000);
+    width: 350px;
+    max-height: 850px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data__header{
+    border-bottom: 5px solid #ffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#data__title{
+    font-size: 35px;
+    font-family: "Outfit";
+    font-weight: 500;
+    color: #fff;
+}
+
+.section__elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.section__elements::-webkit-scrollbar{
+    width: 0;
+}
+
+.button--addTask{
+    margin-bottom: 10px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: linear-gradient(#5296f0, #fffefe);
+    color: #000;
+    font-weight: 400;
+    font-family: "Outfit";
+}
+
+.button--addTask:hover{
+    background-color: rgb(151, 161, 161);
+    transform: scale(1.1);
+}
+
+@media (max-width: 401px) {
+    .container__data{
+        width: 90%;
+    }
+}
