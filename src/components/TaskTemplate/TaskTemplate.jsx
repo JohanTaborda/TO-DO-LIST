@@ -14,7 +14,7 @@ const TaskTemplate = ({ task, updateTask }) => {
     
     //Basicamente acá, sacamos todas las propiedades del objeto task.
     const { id, handleVerified, textInput, prevText, textArea, prevTextArea, changeAcept, cardVisible } = task;
-
+    const mensaje = "Hola";
     const handleUpdate = (newData) => { //Función que permite actualizar. 
         //Llamamos la función updateTask, que se recibe por props y le mandamos el id de la tarea y la nueva actualización
         updateTask(id, { ...task, ...newData }); //Recibe los datos nuevos y los reemplaza en los actuales. 
